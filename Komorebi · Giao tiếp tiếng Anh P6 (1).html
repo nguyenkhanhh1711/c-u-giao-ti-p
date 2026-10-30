@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Komorebi · Giao tiếp tiếng Anh P6</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#4a4a3a;--mut:#9a9a82;--tl:#2fa3c4;--gr:#7fbf5e;--go:#e8b93c;--card:rgba(255,253,244,.78);--ok:#1f9d55;--okb:#e2f6e5;--no:#d9435c;--nob:#fde8ec;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}html,body{margin:0}html{scroll-behavior:smooth}
+body{font-family:'Be Vietnam Pro',system-ui,sans-serif;color:var(--ink);background:#fbf4dc;padding-bottom:120px}
+.bg{position:fixed;inset:0;z-index:-3;background:linear-gradient(160deg,#fdf8e6 0%,#f8eec6 45%,#f6efd6 100%)}
+.bm{position:fixed;z-index:-2;top:-20%;width:34%;height:150%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.6),transparent);transform:rotate(18deg);animation:bm 9s ease-in-out infinite alternate;pointer-events:none}
+.bm:nth-of-type(2){left:38%;width:20%;animation-delay:-3s}.bm:nth-of-type(3){left:68%;animation-delay:-6s}.bm:first-of-type{left:6%}
+@keyframes bm{from{opacity:.25}to{opacity:.85}}
+.lf{position:fixed;z-index:-1;pointer-events:none;filter:blur(5px);opacity:.55;transform-origin:top right;animation:sw 7s ease-in-out infinite alternate}
+@keyframes sw{to{transform:rotate(5deg) translateY(6px)}}
+.fall{position:fixed;top:-40px;z-index:-1;pointer-events:none;width:26px;animation:fa linear infinite}
+@keyframes fa{to{transform:translate(60px,110vh) rotate(540deg)}}
+.pn{padding:60px 18px 40px;position:relative}.in{max-width:700px;margin:auto}
+.tt{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;background:linear-gradient(90deg,var(--tl),#5fc3a5 45%,var(--go));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-1px;line-height:1}
+.cap{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--mut);font-weight:500}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative}
+.hero h1{font-size:clamp(64px,21vw,140px);margin:6px 0}
+.jp{display:flex;align-items:center;gap:14px;color:#b8a54a;font-size:20px;letter-spacing:.2em;margin-top:6px}.jp::before,.jp::after{content:"";width:60px;height:1px;background:linear-gradient(90deg,transparent,#d9c26a)}.jp::after{transform:scaleX(-1)}
+.vine{position:absolute;width:min(46%,260px);top:36%;opacity:.9}.vl{left:0}.vr{right:0;transform:scaleX(-1)}
+.vine path{stroke-dasharray:400;stroke-dashoffset:400;animation:dw 3.5s .4s forwards}@keyframes dw{to{stroke-dashoffset:0}}
+.rv{opacity:0;transform:translateY(26px);transition:1s cubic-bezier(.2,.8,.2,1)}.rv.v{opacity:1;transform:none}
+h2.tt{font-size:clamp(36px,9vw,56px);margin:4px 0 14px}
+.card{background:var(--card);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.9);border-radius:26px;padding:20px;margin:14px 0;box-shadow:0 12px 36px rgba(180,160,70,.16)}
+.line{display:flex;gap:10px;margin:9px 0;padding:8px 10px;border-radius:14px;transition:.3s;line-height:1.65;font-size:15.5px}
+.line b{flex:none;min-width:64px;font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--tl);font-weight:600}
+.line.hl{background:rgba(232,185,60,.25);transform:translateX(6px)}
+mark{background:linear-gradient(transparent 62%,rgba(232,185,60,.55) 62%);color:inherit;font-weight:600;cursor:pointer;padding:0 1px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.btn{border:0;background:#fff;color:var(--ink);font:600 13px 'Be Vietnam Pro',system-ui,sans-serif;padding:10px 18px;border-radius:99px;cursor:pointer;box-shadow:0 3px 12px rgba(180,160,70,.25)}
+.btn.p{background:linear-gradient(90deg,var(--tl),#6cc59a);color:#fff}
+.wave{display:inline-flex;gap:2px;align-items:flex-end;height:12px;margin-right:7px}.wave i{width:3px;background:currentColor;border-radius:2px;height:5px}
+.on .wave i{animation:wv .6s infinite alternate}.wave i:nth-child(2){animation-delay:.15s}.wave i:nth-child(3){animation-delay:.3s}@keyframes wv{to{height:12px}}
+.k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);font-weight:600;margin:14px 0 4px}
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px}
+.pc{display:flex;gap:10px;align-items:flex-start;background:rgba(255,255,255,.7);border-radius:16px;padding:10px 12px}
+.pc b{display:block;color:#2a8aa6;font-size:15px}.pc span{font-size:13px;line-height:1.5;color:#6a6a52}
+.sp{width:34px;height:34px;border-radius:50%;border:0;background:linear-gradient(135deg,var(--tl),#6cc59a);color:#fff;cursor:pointer;flex:none}
+.qt{font-weight:600;margin:6px 0 8px;line-height:1.5}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}@media(max-width:520px){.opts{grid-template-columns:1fr}}
+.opt{text-align:left;padding:11px 14px;border-radius:14px;border:1.5px solid rgba(47,163,196,.25);background:#fff;color:var(--ink);font:500 14.5px 'Be Vietnam Pro',system-ui,sans-serif;cursor:pointer;transition:.2s}
+.opt:hover:not([disabled]){border-color:var(--tl);transform:translateY(-2px)}.opt b{color:var(--tl);margin-right:7px}
+.opt.ok{background:var(--okb);border-color:var(--ok)}.opt.no{background:var(--nob);border-color:var(--no);animation:sh .35s}.opt.dim{opacity:.55}.opt[disabled]{cursor:default}
+@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.exp{margin-top:10px;padding:11px 14px;border-radius:16px;background:var(--okb);font-size:14px;line-height:1.6;animation:up .4s both}.exp.bd{background:var(--nob)}@keyframes up{from{opacity:0;transform:translateY(10px)}}
+.sc{position:sticky;top:calc(8px + env(safe-area-inset-top,0px));z-index:6;text-align:center;margin-bottom:6px}
+.sc span{display:inline-block;background:rgba(255,253,244,.95);padding:8px 18px;border-radius:99px;font-weight:600;font-size:14px;color:#2a8aa6;box-shadow:0 6px 20px rgba(180,160,70,.3)}
+nav{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(22px + env(safe-area-inset-bottom,0px));display:flex;gap:3px;padding:7px;border-radius:26px;background:rgba(255,253,244,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 12px 36px rgba(180,160,70,.35);z-index:20}
+nav button{display:flex;align-items:center;gap:6px;border:1.5px solid transparent;background:none;color:var(--ink);font:600 13px 'Be Vietnam Pro',system-ui,sans-serif;padding:10px 14px;border-radius:18px;cursor:pointer;transition:.35s}
+nav button span{max-width:0;overflow:hidden;white-space:nowrap;transition:.35s}
+nav button.on{background:#fff;border-color:#bfe3c4;color:#2a8aa6;box-shadow:0 2px 10px rgba(47,163,196,.3)}nav button.on span{max-width:90px}
+</style></head><body>
+<div class="bg"></div><div class="bm"></div><div class="bm"></div><div class="bm"></div>
+<svg class="lf" style="right:-30px;top:-20px" width="340" height="300" viewBox="0 0 340 300"><g fill="#5f9a4c"><path d="M330 10C270 30 230 80 220 150c50-10 100-60 110-140z"/><path d="M300 0C250 60 210 90 170 110c40 20 110-10 130-110z"/><path d="M340 120C290 130 250 170 240 230c50-10 90-50 100-110z"/></g></svg>
+<svg class="lf" style="left:-60px;top:30%;transform-origin:top left" width="220" height="220" viewBox="0 0 220 220"><g fill="#7ab05f"><path d="M0 20C60 30 100 70 110 130 60 120 10 90 0 20z"/><path d="M0 110C50 110 90 140 100 190 50 185 10 160 0 110z"/></g></svg>
+<div id="falls"></div>
+
+<section class="pn" id="s0" data-n="lesson"><div class="in hero">
+<svg class="vine vl" viewBox="0 0 260 160" fill="none" stroke="#7fbf5e" stroke-width="1.6"><path d="M0 140C60 130 90 90 120 60 150 30 190 20 240 30"/><path d="M60 128c-6-24 6-40 24-48M110 70c-8-22 0-38 14-48M170 34c4-16 16-24 30-24"/><g fill="#9fd57a" stroke="none"><ellipse cx="84" cy="80" rx="10" ry="5" transform="rotate(-50 84 80)"/><ellipse cx="124" cy="22" rx="9" ry="4.5" transform="rotate(-60 124 22)"/><ellipse cx="200" cy="10" rx="10" ry="5" transform="rotate(-20 200 10)"/><ellipse cx="150" cy="56" rx="9" ry="4.5" transform="rotate(30 150 56)"/></g></svg>
+<svg class="vine vr" viewBox="0 0 260 160" fill="none" stroke="#7fbf5e" stroke-width="1.6"><path d="M0 140C60 130 90 90 120 60 150 30 190 20 240 30"/><path d="M60 128c-6-24 6-40 24-48M110 70c-8-22 0-38 14-48M170 34c4-16 16-24 30-24"/><g fill="#9fd57a" stroke="none"><ellipse cx="84" cy="80" rx="10" ry="5" transform="rotate(-50 84 80)"/><ellipse cx="124" cy="22" rx="9" ry="4.5" transform="rotate(-60 124 22)"/><ellipse cx="200" cy="10" rx="10" ry="5" transform="rotate(-20 200 10)"/></g></svg>
+<div class="cap rv">Giao tiếp tiếng Anh · Phần 6</div>
+<h1 class="tt rv" style="transition-delay:.2s">Komorebi</h1>
+<p class="rv" style="transition-delay:.5s;color:#8a8a6e;margin-top:24px;font-size:14px;line-height:1.7">5 đoạn hội thoại thực tế · 30 cụm từ<br>có giọng đọc · 30 câu bài tập</p>
+<div class="cap rv" style="transition-delay:.65s;margin-top:28px">Lướt xuống ↓</div></div></section>
+
+<div id="lesson"></div>
+
+<section class="pn" id="ex" data-n="ex"><div class="in"><div class="cap rv">Phần 3</div><h2 class="tt rv">Bài tập áp dụng</h2><p class="rv" style="color:#7a7a62">Dựa vào các đoạn hội thoại và phần giải nghĩa, chọn đáp án đúng nhất.</p><div class="sc"><span id="sc"></span></div><div id="qs"></div><div style="text-align:center;margin-top:14px"><button class="btn p" id="rs">↺ Làm lại</button></div></div></section>
+
+<nav id="nav"><button data-g="lesson" class="on">🌿<span>Bài học</span></button><button data-g="ex">✏️<span>Bài tập</span></button></nav>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+$('#falls').innerHTML=[10,30,50,70,88].map((l,i)=>`<svg class="fall" viewBox="0 0 40 40" style="left:${l}%;animation-duration:${16+i*4}s;animation-delay:-${i*5}s"><path d="M5 35C5 15 20 3 37 4 36 22 24 36 5 35z" fill="${['#8fcf6a','#e8c44e','#7bbf8a','#c7dd6a','#f0d36a'][i]}" opacity=".7"/></svg>`).join('');
+let ac;function beep(a){try{ac=ac||new(window.AudioContext||window.webkitAudioContext)();a.forEach(([f,t,d,y])=>{const o=ac.createOscillator(),g=ac.createGain(),n=ac.currentTime+t;o.type=y||'sine';o.frequency.value=f;g.gain.setValueAtTime(.0001,n);g.gain.exponentialRampToValueAtTime(.22,n+.02);g.gain.exponentialRampToValueAtTime(.0001,n+d);o.connect(g);g.connect(ac.destination);o.start(n);o.stop(n+d+.05)})}catch(e){}}
+const ok=()=>beep([[660,0,.15],[880,.12,.3]]),no=()=>beep([[220,0,.2,'sawtooth'],[150,.18,.3,'sawtooth']]);
+/* voice */
+let stopFlag=0;
+function stopAll(){stopFlag++;try{speechSynthesis.cancel()}catch(e){}$$('.play.on').forEach(b=>b.classList.remove('on'));$$('.line.hl').forEach(l=>l.classList.remove('hl'))}
+function say(t,r){stopAll();try{const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=r||.85;const v=speechSynthesis.getVoices().find(v=>/en[-_]US/i.test(v.lang));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){}}
+function playD(i,btn){if(btn.classList.contains('on')){stopAll();return}stopAll();btn.classList.add('on');const my=stopFlag,ls=$$(`#d${i} .line`),names=[];let k=0;
+const next=()=>{if(my!=stopFlag)return;if(k>=ls.length){stopAll();return}const el=ls[k++];ls.forEach(l=>l.classList.remove('hl'));el.classList.add('hl');el.scrollIntoView({block:'center',behavior:'smooth'});const sp=el.querySelector('b').textContent;if(!names.includes(sp))names.push(sp);const u=new SpeechSynthesisUtterance(el.querySelector('span').textContent);u.lang='en-US';u.rate=.92;u.pitch=names.indexOf(sp)%2?.8:1.15;const v=speechSynthesis.getVoices().filter(v=>/en[-_]US/i.test(v.lang));if(v.length)u.voice=v[names.indexOf(sp)%v.length];u.onend=u.onerror=()=>setTimeout(next,250);speechSynthesis.speak(u)};next()}
+/* data */
+const PH=`Get down to business|Bắt đầu vào việc chính / Bắt tay vào làm việc.
+On track|Đúng tiến độ / Đi đúng hướng.
+Call in sick|Gọi điện báo cáo xin nghỉ ốm.
+Cover for someone|Làm thay việc / Gánh vác giúp ai đó khi họ vắng mặt.
+Behind schedule|Trễ tiến độ / Bị chậm kế hoạch.
+Keep me posted|Nhớ cập nhật tình hình cho tôi nhé.
+A table for two|Cho xin một bàn hai người (khi vào nhà hàng).
+Grab a bite|Ăn vội / Ăn nhẹ cái gì đó.
+On the house|Miễn phí (do nhà hàng bao / tặng).
+Doggy bag|Túi / hộp để gói thức ăn thừa mang về.
+Check, please|Cho xem hóa đơn / Tính tiền nhé.
+Split the bill|Chia hóa đơn (mỗi người trả một phần).
+Just browsing|Tôi chỉ xem thôi (chưa mua).
+On sale|Đang được giảm giá.
+A steal|Một món hời (giá rẻ như cho).
+Try it on|Mặc thử / Thử đồ.
+Out of stock|Đã hết hàng.
+Rip-off|Giá cắt cổ / Trắng trợn lừa đảo (bán quá đắt).
+Lost my way|Bị lạc đường.
+Show me the way|Chỉ đường cho tôi.
+Round trip|Chuyến đi khứ hồi (2 chiều).
+Book in advance|Đặt chỗ / Mua vé từ trước.
+Travel light|Du lịch gọn nhẹ (mang ít hành lý).
+Off the beaten path|Những nơi xa xôi, hoang sơ, ít người tới.
+Catch a movie|Đi xem phim.
+Chill out|Thư giãn / Nghỉ ngơi.
+Sleep in|Ngủ nướng (ngủ dậy muộn hơn bình thường).
+Early bird|Người có thói quen dậy sớm.
+Have a get-together|Tổ chức một buổi tụ tập bạn bè nhỏ.
+Paint the town red|Đi chơi xả láng / Quẩy hết mình.`.split('\n').map(l=>l.split('|'));
+const DL=[['Đoạn 1','At the Office','Tại nơi làm việc',[['Manager','Alright everyone, let’s stop chatting and [get down to business]. Is the new project [on track]?'],['Sarah','Mostly yes. But John had to [call in sick] today because of a fever.'],['Manager','I see. Who can [cover for him] while he’s away? We can’t afford to fall [behind schedule].'],['Sarah','I will handle his tasks. I will [keep you posted] if we need more time.']]],
+['Đoạn 2','Eating Out','Đi ăn nhà hàng',[['Customer','Hi, we’d like [a table for two], please. We’re in a hurry and just want to [grab a bite].'],['Waiter','Right this way. And since it’s our restaurant’s anniversary, dessert is [on the house]!'],['Customer','That’s lovely! (After eating)… Could we get a [doggy bag] for the leftovers? And the [check, please].'],['Friend','Let me pay for this. Or we can [split the bill].']]],
+['Đoạn 3','Shopping','Mua sắm',[['Staff','Hello, can I help you find anything?'],['Customer','No thanks, I’m [just browsing]. Oh wait, is this jacket [on sale]?'],['Staff','Yes, it’s 50% off today. At this price, it’s basically [a steal]!'],['Customer','Great, can I [try it on]? Also, do you have it in blue?'],['Staff','Sorry, the blue one is [out of stock]. But honestly, the black one looks better. Don’t buy at the other store across the street, their clothes are a total [rip-off].']]],
+['Đoạn 4','Travel & Directions','Du lịch & Hỏi đường',[['Tourist','Excuse me, I think I [lost my way]. Could you [show me the way] to the central train station?'],['Local','Sure, go straight down this road. Are you buying a one-way or [round trip] ticket?'],['Tourist','Round trip. I had to [book in advance] because it’s peak season.'],['Local','Good idea. I see you only have one small backpack.'],['Tourist','Yes, I always [travel light]. I love exploring places that are [off the beaten path].']]],
+['Đoạn 5','Weekend Plans','Kế hoạch cuối tuần',[['Anna','Hey, do you want to [catch a movie] tonight?'],['Tom','Nah, I’ve had a long week. I just want to stay home and [chill out]. Plus, I plan to [sleep in] tomorrow morning.'],['Anna','Really? You are usually an [early bird]!'],['Tom','Not this weekend. But maybe next Saturday we can [have a get-together] and [paint the town red]!'],['Anna','Sounds like a plan!']]]];
+$('#lesson').innerHTML=DL.map((d,i)=>`<section class="pn" id="d${i}" data-n="lesson"><div class="in"><div class="cap rv">${d[0]} · ${d[2]}</div><h2 class="tt rv">${d[1]}</h2>
+<div class="card rv"><div class="bar"><button class="btn p play" data-pd="${i}"><span class="wave"><i></i><i></i><i></i></span>Nghe hội thoại</button></div>
+${d[3].map(l=>`<div class="line"><b>${l[0]}:</b><span>${l[1].replace(/\[(.+?)\]/g,'<mark data-s="$1">$1</mark>')}</span></div>`).join('')}
+<div class="k">Cụm từ trong đoạn · chạm 🔊 để nghe</div><div class="pg">${PH.slice(i*6,i*6+6).map((p,j)=>`<div class="pc"><button class="sp" data-s="${p[0]}">🔊</button><div><b>${i*6+j+1}. ${p[0]}</b><span>${p[1]}</span></div></div>`).join('')}</div></div></div></section>`).join('');
+/* exercises */
+const Q=`We have been talking for 20 minutes. Now, let’s ___ and finish the report.|call in sick|travel light|get down to business|split the bill|C|<b>get down to business</b> = bắt tay vào việc chính (hết chuyện phiếm, làm báo cáo).
+Don’t worry, the construction of the building is ___. We will finish it on time.|out of stock|on track|behind schedule|round trip|B|<b>on track</b> = đúng tiến độ ➤ khớp với “finish it on time”.
+I feel terrible today. I think I have to ___ and rest at home.|call in sick|paint the town red|grab a bite|just browsing|A|<b>call in sick</b> = gọi báo nghỉ ốm vì cảm thấy không khỏe.
+I need to leave early for a dentist appointment. Can you ___ me?|sleep in|catch a movie|try it on|cover for|D|<b>cover for someone</b> = làm thay việc khi người đó vắng mặt.
+The project is taking too long. We are one month ___.|early bird|a steal|behind schedule|on the house|C|<b>behind schedule</b> = trễ tiến độ (dự án kéo dài quá lâu).
+Good luck with your meeting with the client. Please ___ on the results.|keep me posted|show me the way|travel light|chill out|A|<b>keep me posted</b> = nhớ cập nhật tình hình cho tôi.
+Good evening. I’d like ___, please. My wife is waiting outside.|a doggy bag|a table for two|a get-together|an early bird|B|<b>a table for two</b> = xin một bàn hai người (tôi và vợ).
+I’m really hungry but I have a meeting in 10 minutes. Let’s just ___.|paint the town red|lost my way|split the bill|grab a bite|D|<b>grab a bite</b> = ăn vội, ăn nhẹ vì chỉ còn 10 phút.
+The manager gave us free drinks. He said they were ___.|out of stock|on the house|round trip|on sale|B|<b>on the house</b> = miễn phí (nhà hàng tặng).
+We ordered too much food. Could we have a ___ for this pizza?|doggy bag|rip-off|steal|table for two|A|<b>doggy bag</b> = hộp gói thức ăn thừa mang về.
+Waiter, we are ready to leave. ___, please.|Keep me posted|Show me the way|Check|Try it on|C|<b>Check, please</b> = cho xin hóa đơn / tính tiền.
+You don’t have to pay for all of this! Let’s ___.|catch a movie|book in advance|split the bill|call in sick|C|<b>split the bill</b> = chia hóa đơn, mỗi người trả một phần.
+“Can I help you?” – “No, I’m ___, thank you.”|just browsing|travelling light|covering for you|sleeping in|A|<b>just browsing</b> = chỉ xem chứ chưa mua (trả lời nhân viên bán hàng).
+This television is 30% cheaper because it’s ___ this week.|off the beaten path|a rip-off|on track|on sale|D|<b>on sale</b> = đang giảm giá (rẻ hơn 30%).
+I bought this laptop for only $100! It’s ___!|a doggy bag|a steal|out of stock|round trip|B|<b>a steal</b> = món hời, giá rẻ như cho.
+That dress looks beautiful. You should go to the fitting room and ___.|try it on|chill out|call in sick|split it|A|<b>try it on</b> = mặc thử (phòng thử đồ).
+I wanted to buy the new iPhone, but the store told me it was ___.|on the house|behind schedule|out of stock|early bird|C|<b>out of stock</b> = đã hết hàng.
+$50 for a cup of coffee? That’s a total ___!|rip-off|get-together|steal|round trip|A|<b>rip-off</b> = giá cắt cổ (50$ cho một ly cà phê).
+My phone battery died and I didn’t have a map, so I ___.|painted the town red|lost my way|kept you posted|slept in|B|<b>lost my way</b> = bị lạc đường (không có bản đồ).
+Excuse me, could you ___ to the nearest hospital?|cover for me|show me the way|catch a movie|split the bill|B|<b>show me the way</b> = chỉ đường cho tôi.
+A one-way ticket is $50, but a ___ ticket is only $80.|early bird|doggy bag|round trip|steal|C|<b>round trip</b> = vé khứ hồi (đối lập với one-way).
+During the summer holiday, hotels are full. You must ___.|travel light|book in advance|call in sick|chill out|B|<b>book in advance</b> = đặt chỗ trước (mùa cao điểm, khách sạn kín).
+I don’t want to carry heavy suitcases. I prefer to ___.|travel light|grab a bite|get down to business|sleep in|A|<b>travel light</b> = du lịch gọn nhẹ, mang ít hành lý.
+I hate crowded tourist traps. I want to visit a beautiful island that is ___.|on the house|on track|behind schedule|off the beaten path|D|<b>off the beaten path</b> = nơi hoang sơ, ít người tới (trái với bẫy du lịch đông đúc).
+There is a new Marvel film in the cinema. Do you want to ___ with me?|have a get-together|chill out|catch a movie|try it on|C|<b>catch a movie</b> = đi xem phim.
+After a stressful week at work, I just want to ___ on the sofa and listen to music.|chill out|paint the town red|split the bill|cover for someone|A|<b>chill out</b> = thư giãn, nghỉ ngơi sau tuần căng thẳng.
+Tomorrow is Sunday, so I don’t need to wake up at 6 AM. I’m going to ___.|keep you posted|sleep in|round trip|travel light|B|<b>sleep in</b> = ngủ nướng, dậy muộn hơn bình thường.
+My grandfather wakes up at 4 AM every day. He is a true ___.|steal|rip-off|early bird|doggy bag|C|<b>early bird</b> = người có thói quen dậy sớm.
+We haven’t seen our classmates for years. We should ___ soon.|call in sick|have a get-together|book in advance|get down to business|B|<b>have a get-together</b> = tổ chức buổi tụ tập bạn bè.
+We finally graduated! Let’s go to the club and ___ tonight!|paint the town red|try it on|chill out|keep me posted|A|<b>paint the town red</b> = đi chơi xả láng, quẩy hết mình.`.split('\n').map(l=>{const p=l.split('|');return{q:p[0],o:p.slice(1,5),a:'ABCD'.indexOf(p[5]),e:p[6]}});
+const KEY='CBADCABDBACCADBACABBCBADCABCBA';
+Q.forEach((q,i)=>{if('ABCD'[q.a]!=KEY[i])console.warn('key mismatch',i+1)});
+const A={};
+const sc=()=>{const v=Object.values(A);$('#sc').textContent=`Đã làm ${v.length}/30 · Đúng ${v.filter(x=>x).length}`};
+function rend(){Object.keys(A).forEach(k=>delete A[k]);$('#qs').innerHTML=Q.map((q,i)=>`<div class="card rv v"><div class="k" style="margin-top:0">Câu ${i+1}</div><div class="qt">${q.q}</div><div class="opts">${q.o.map((o,k)=>`<button class="opt" data-i="${i}" data-k="${k}"><b>${'ABCD'[k]}.</b>${o}</button>`).join('')}</div><div id="e${i}"></div></div>`).join('');sc()}
+rend();
+document.addEventListener('click',e=>{let b;
+if(b=e.target.closest('.opt')){const i=+b.dataset.i,k=+b.dataset.k,q=Q[i];if(A[i]!==undefined)return;const g=k==q.a;A[i]=g?1:0;(g?ok:no)();$$(`.opt[data-i="${i}"]`).forEach((x,j)=>{x.disabled=true;x.classList.add(j==q.a?'ok':j==k?'no':'dim')});$('#e'+i).innerHTML=`<div class="exp ${g?'':'bd'}">${g?'✅ Chính xác!':'❌ Chưa đúng.'} Đáp án: <b>${'ABCD'[q.a]}</b>.<br>${q.e}</div>`;sc();return}
+if(b=e.target.closest('[data-pd]')){playD(+b.dataset.pd,b);return}
+if(b=e.target.closest('[data-s]')){say(b.dataset.s);return}
+if(e.target.closest('#rs')){rend();$('#ex').scrollIntoView({behavior:'smooth'});return}
+if(b=e.target.closest('#nav button')){const t=b.dataset.g=='lesson'?$('#d0'):$('#'+b.dataset.g);t.scrollIntoView({behavior:'smooth'})}});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}}),{threshold:.1});$$('.rv').forEach(x=>io.observe(x));
+const io2=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting)$$('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.g==x.target.dataset.n))}),{rootMargin:'-45% 0px -50% 0px'});$$('section[data-n]').forEach(s=>io2.observe(s));
+</script></body></html>
